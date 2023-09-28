@@ -16,6 +16,7 @@ class ProcessData:
     self.__categorizeCollumn('status')
     self.__categorizeCollumn('convenio')
     self.__categorizeCollumn('almoxarifado')
+    self.__categorizeCollumn('unidade_requisitante')
     self.__generateFileWithNewData()
 
   # -- private methods
@@ -40,8 +41,8 @@ class ProcessData:
       'grupo_material',
       'tipo_requisicao',
       'unidade_custo',
-      'id_unidade_custo'
-      'unidade_requisitante'
+      'id_unidade_custo',
+      'id_unidade_requisitante'
     ], axis=1)
 
   def __getOnlyMaterialRequests(self):
